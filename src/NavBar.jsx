@@ -21,7 +21,7 @@ const NavBar = () => {
                                     </ul>
                                     <ul className="d-flex navbar-nav">
                                         <li className="nav-item">
-                                            <NavLink exact className="nav-link" aria-current="page" to="/">Home</NavLink>
+                                            <NavLink exact className="nav-link" aria-current="page" to="/my-porf">Home</NavLink>
                                         </li>
                                         <li className="nav-item">
                                             <NavLink exact className="nav-link" to="/Portfolio">Portfolio</NavLink>
