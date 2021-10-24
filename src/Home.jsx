@@ -8,7 +8,7 @@ const Home = () => {
     
     return (
         <>
-            <Common desc="I am an Computer Engineering Student and a tech enthusiast, I love to build project such as android and web apps" beforebtn="you can check out some of my projects down here" path="/mPortfolio" img={front} btncap="Portfolio"/>         
+            <Common desc="I am an Computer Engineering Student and a tech enthusiast, I love to build project such as android and web apps" beforebtn="you can check out some of my projects down here" path="/Portfolio" img={front} btncap="Portfolio"/>         
         </>
     )
 }

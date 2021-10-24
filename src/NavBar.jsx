@@ -24,7 +24,7 @@ const NavBar = () => {
                                             <NavLink exact className="nav-link" aria-current="page" to="/">Home</NavLink>
                                         </li>
                                         <li className="nav-item">
-                                            <NavLink exact className="nav-link" to="/mPortfolio">Portfolio</NavLink>
+                                            <NavLink exact className="nav-link" to="/Portfolio">Portfolio</NavLink>
                                         </li>
                                         <li className="nav-item">
                                             <NavLink exact className="nav-link" to="/About">About</NavLink>
