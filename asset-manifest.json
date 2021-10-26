@@ -1,24 +1,22 @@
 {
   "files": {
-    "main.css": "/my-porf/static/css/main.b5f7eabf.chunk.css",
-    "main.js": "/my-porf/static/js/main.670049d2.chunk.js",
-    "main.js.map": "/my-porf/static/js/main.670049d2.chunk.js.map",
+    "main.css": "/my-porf/static/css/main.bb8a3d3a.chunk.css",
+    "main.js": "/my-porf/static/js/main.a2ffe242.chunk.js",
+    "main.js.map": "/my-porf/static/js/main.a2ffe242.chunk.js.map",
     "runtime-main.js": "/my-porf/static/js/runtime-main.59be78f8.js",
     "runtime-main.js.map": "/my-porf/static/js/runtime-main.59be78f8.js.map",
     "static/css/2.0a9ec390.chunk.css": "/my-porf/static/css/2.0a9ec390.chunk.css",
-    "static/js/2.0833f1f0.chunk.js": "/my-porf/static/js/2.0833f1f0.chunk.js",
-    "static/js/2.0833f1f0.chunk.js.map": "/my-porf/static/js/2.0833f1f0.chunk.js.map",
+    "static/js/2.74a84c8b.chunk.js": "/my-porf/static/js/2.74a84c8b.chunk.js",
+    "static/js/2.74a84c8b.chunk.js.map": "/my-porf/static/js/2.74a84c8b.chunk.js.map",
     "index.html": "/my-porf/index.html",
     "static/css/2.0a9ec390.chunk.css.map": "/my-porf/static/css/2.0a9ec390.chunk.css.map",
-    "static/css/main.b5f7eabf.chunk.css.map": "/my-porf/static/css/main.b5f7eabf.chunk.css.map",
-    "static/js/2.0833f1f0.chunk.js.LICENSE.txt": "/my-porf/static/js/2.0833f1f0.chunk.js.LICENSE.txt",
+    "static/css/main.bb8a3d3a.chunk.css.map": "/my-porf/static/css/main.bb8a3d3a.chunk.css.map",
+    "static/js/2.74a84c8b.chunk.js.LICENSE.txt": "/my-porf/static/js/2.74a84c8b.chunk.js.LICENSE.txt",
     "static/media/KB_prime (2).62073ee7.png": "/my-porf/static/media/KB_prime (2).62073ee7.png",
     "static/media/bb1.28a0c662.png": "/my-porf/static/media/bb1.28a0c662.png",
     "static/media/bb2.91bdf651.png": "/my-porf/static/media/bb2.91bdf651.png",
     "static/media/bb3.b90ec99f.png": "/my-porf/static/media/bb3.b90ec99f.png",
-    "static/media/bg1.d6795fa5.png": "/my-porf/static/media/bg1.d6795fa5.png",
     "static/media/bitmoji1.3fd6af22.png": "/my-porf/static/media/bitmoji1.3fd6af22.png",
-    "static/media/bitmoji2.99909b74.png": "/my-porf/static/media/bitmoji2.99909b74.png",
     "static/media/bitmoji3.db829f40.png": "/my-porf/static/media/bitmoji3.db829f40.png",
     "static/media/em1.e532df08.jpg": "/my-porf/static/media/em1.e532df08.jpg",
     "static/media/em2.df0fd9f1.jpg": "/my-porf/static/media/em2.df0fd9f1.jpg",
@@ -27,8 +25,8 @@
   "entrypoints": [
     "static/js/runtime-main.59be78f8.js",
     "static/css/2.0a9ec390.chunk.css",
-    "static/js/2.0833f1f0.chunk.js",
-    "static/css/main.b5f7eabf.chunk.css",
-    "static/js/main.670049d2.chunk.js"
+    "static/js/2.74a84c8b.chunk.js",
+    "static/css/main.bb8a3d3a.chunk.css",
+    "static/js/main.a2ffe242.chunk.js"
   ]
 }
