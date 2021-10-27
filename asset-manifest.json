@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/my-porf/static/css/main.81237655.chunk.css",
-    "main.js": "/my-porf/static/js/main.94207841.chunk.js",
-    "main.js.map": "/my-porf/static/js/main.94207841.chunk.js.map",
+    "main.css": "/my-porf/static/css/main.35df4500.chunk.css",
+    "main.js": "/my-porf/static/js/main.efd8ad50.chunk.js",
+    "main.js.map": "/my-porf/static/js/main.efd8ad50.chunk.js.map",
     "runtime-main.js": "/my-porf/static/js/runtime-main.59be78f8.js",
     "runtime-main.js.map": "/my-porf/static/js/runtime-main.59be78f8.js.map",
     "static/css/2.0a9ec390.chunk.css": "/my-porf/static/css/2.0a9ec390.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.7161930a.chunk.js.map": "/my-porf/static/js/2.7161930a.chunk.js.map",
     "index.html": "/my-porf/index.html",
     "static/css/2.0a9ec390.chunk.css.map": "/my-porf/static/css/2.0a9ec390.chunk.css.map",
-    "static/css/main.81237655.chunk.css.map": "/my-porf/static/css/main.81237655.chunk.css.map",
+    "static/css/main.35df4500.chunk.css.map": "/my-porf/static/css/main.35df4500.chunk.css.map",
     "static/js/2.7161930a.chunk.js.LICENSE.txt": "/my-porf/static/js/2.7161930a.chunk.js.LICENSE.txt",
     "static/media/KB_prime (2).62073ee7.png": "/my-porf/static/media/KB_prime (2).62073ee7.png",
     "static/media/bb1.28a0c662.png": "/my-porf/static/media/bb1.28a0c662.png",
@@ -26,7 +26,7 @@
     "static/js/runtime-main.59be78f8.js",
     "static/css/2.0a9ec390.chunk.css",
     "static/js/2.7161930a.chunk.js",
-    "static/css/main.81237655.chunk.css",
-    "static/js/main.94207841.chunk.js"
+    "static/css/main.35df4500.chunk.css",
+    "static/js/main.efd8ad50.chunk.js"
   ]
 }
