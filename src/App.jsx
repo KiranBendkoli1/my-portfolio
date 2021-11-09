@@ -7,15 +7,15 @@ import NavBar from "./NavBar";
 import About from "./About";
 import Contact from "./Contact";
 import Portfolio from "./Portfolio";
-import Bbms from "./Bbms";
-import Exmp from "./Exmp";
+import Footer from "./Footer";
+import Project from "./Project";
 
 const App = () => {
     return (
         <>
             <NavBar />
             <Switch>
-                <Route exact path="/my-prof">
+                <Route exact path="/my-portfolio">
                     <Home />
                 </Route>
                 <Route exact path="/about">
@@ -27,14 +27,11 @@ const App = () => {
                 <Route exact path="/contact">
                     <Contact />
                 </Route>
-                <Route exact path="/bbms">
-                    <Bbms/>
-                </Route>
-                <Route exact path="/expm">
-                    <Exmp/>
+                <Route exact path="/Project/:index">
+                    <Project/>
                 </Route>
             </Switch>
-
+            <Footer/>
         </>
     )
 }
