@@ -26,12 +26,11 @@ const Mailer = () => {
                     <form onSubmit={sendEmail}>
                         <div className="mb-3">
                             <label htmlFor="name" className="form-label">Name</label>
-                            <input type="text" className="form-control" id="name" name="name" aria-describedby="emailHelp" required/>
+                            <input type="text" className="form-control" id="name" name="name" aria-describedby="emailHelp" required />
                         </div>
                         <div className="mb-3">
                             <label htmlFor="email" className="form-label">Email</label>
-                            <input type="email" className="form-control" id="user_email" name="user_email" required/>
-                            <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
+                            <input type="email" className="form-control" id="user_email" name="user_email" required />
                         </div>
                         <div className="mb-3">
                             <label htmlFor="message" className="form-label">Message</label>

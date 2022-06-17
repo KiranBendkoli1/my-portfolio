@@ -1,6 +1,6 @@
 import React from "react";
 import Common from "./Common";
-import front from "../src/images/bitmoji3.png"
+import front from "../src/images/bitmoji3-min.png"
 const Home = () => {
 
 

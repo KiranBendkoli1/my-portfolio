@@ -4,7 +4,7 @@ import Mailer from './Mailer'
 const Contact = () => {
     return (
         <div>
-            <div className="container-fluid myh ">
+            <div className="container-fluid" style={{height:"89.5vh"}}>
                 <div className="row justify-content-center">
                     <div className="col-10 mx-auto">
                         <Mailer/>

@@ -13,9 +13,9 @@ body {
   --black : rgb(0, 0, 0);
 
 }
-body.light{
-  --background-color: var(--primary-color);
-  --text-color:var(--black) 
+body{
+  background: rgb(187,232,232);
+  background: linear-gradient(135deg, rgba(187,232,232,1) 0%, rgba(235,240,255,1) 31%, rgba(227,238,236,1) 41%, rgba(243,246,255,1) 73%, rgba(189,233,246,1) 100%, rgba(230,237,244,1) 100%);--text-color:var(--black) 
 }
 
 code {
@@ -56,6 +56,8 @@ code {
   color: var(--secondary-color);
 }
 .card{
+  background: rgb(187,232,232);
+background: linear-gradient(135deg, rgba(187,232,232,1) 0%, rgba(235,240,255,1) 31%, rgba(227,238,236,1) 41%, rgba(243,246,255,1) 73%, rgba(189,233,246,1) 100%, rgba(230,237,244,1) 100%);
   margin: 1rem;
 }
 
@@ -94,7 +96,7 @@ code {
   cursor:pointer;
 }
 .myh{
-  height: 82vh;
+  height: 84.5vh;
 }
 .navbar ul li:hover{
   color: var(--secondary-color);

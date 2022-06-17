@@ -5,14 +5,12 @@ const Card = ({ projects }) => {
     return (
         <>
             <div className="container-fluid">
-                <div className="col-10 mx-auto">
-                    <div className="row">
-                        {
-                            projects.map((proj, index) => {
-                                return  <SubCard project={proj} key={proj.index} /> 
-                            })
-                        }
-                    </div>
+                <div className="row col-10 mx-auto" >
+                    {
+                        projects.map((proj, index) => {
+                            return <SubCard project={proj} key={proj.index} />
+                        })
+                    }
                 </div>
             </div>
         </>

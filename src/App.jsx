@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle"
 import Home from "./Home";
@@ -7,7 +7,6 @@ import NavBar from "./NavBar";
 import About from "./About";
 import Contact from "./Contact";
 import Portfolio from "./Portfolio";
-import Footer from "./Footer";
 import Project from "./Project";
 
 const App = () => {
@@ -15,7 +14,7 @@ const App = () => {
         <>
             <NavBar />
             <Switch>
-                <Route exact path="/my-portfolio">
+                <Route exact path="/">
                     <Home />
                 </Route>
                 <Route exact path="/about">
@@ -31,7 +30,7 @@ const App = () => {
                     <Project/>
                 </Route>
             </Switch>
-            <Footer/>
+            {/* <Footer/> */}
         </>
     )
 }
