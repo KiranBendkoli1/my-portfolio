@@ -1,6 +1,6 @@
 import React from 'react'
-import Card from './Card'
-import projects from './ProjectList'
+import Card from '../components/Card'
+import projects from '../components/ProjectList'
 const Portfolio = () => {
     return (
         <div>

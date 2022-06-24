@@ -1,6 +1,6 @@
 import React from 'react'
-import web from "../src/images/bitmoji1-min.png"
-import Common from './Common'
+import web from "../images/bitmoji1-min.png"
+import Common from '../components/Common'
 
 const About = () => {
     return (

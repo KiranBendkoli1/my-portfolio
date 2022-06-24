@@ -1,11 +1,11 @@
 import React from "react";
-import Home from "./Home";
+import Home from "./pages/Home";
 import { Switch, Route } from "react-router";
-import NavBar from "./NavBar";
-import About from "./About";
-import Contact from "./Contact";
-import Portfolio from "./Portfolio";
-import Project from "./Project";
+import NavBar from "./components/NavBar";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Portfolio from "./pages/Portfolio";
+import Project from "./components/Project";
 
 const App = () => {
     return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import Mailer from './Mailer'
+import Mailer from '../components/Mailer'
 
 const Contact = () => {
     return (
