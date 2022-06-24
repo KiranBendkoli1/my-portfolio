@@ -14,8 +14,8 @@ body {
 
 }
 body{
-  background: rgb(187,232,232);
-  background: linear-gradient(135deg, rgba(187,232,232,1) 0%, rgba(235,240,255,1) 31%, rgba(227,238,236,1) 41%, rgba(243,246,255,1) 73%, rgba(189,233,246,1) 100%, rgba(230,237,244,1) 100%);--text-color:var(--black) 
+  /* background: rgb(187,232,232); 
+  background: linear-gradient(135deg, rgba(187,232,232,1) 0%, rgba(235,240,255,1) 31%, rgba(227,238,236,1) 41%, rgba(243,246,255,1) 73%, rgba(189,233,246,1) 100%, rgba(230,237,244,1) 100%);--text-color:var(--black)   */
 }
 
 code {
@@ -26,7 +26,11 @@ code {
   font-size:1.2rem;
 }
 .btn:hover{
-  color: white;
+  color: var(--secondary-color);
+}
+.btn-outline-info{
+  background: rgb(187,232,232);
+background: linear-gradient(135deg, rgba(187,232,232,1) 0%, rgba(235,240,255,1) 31%, rgba(227,238,236,1) 41%, rgba(243,246,255,1) 73%, rgba(189,233,246,1) 100%, rgba(230,237,244,1) 100%);
 }
 .img-box{
   width: 45%;

@@ -4,6 +4,7 @@ import { Switch, Route } from "react-router";
 import NavBar from "./components/NavBar";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Resume from "./pages/Resume";
 import Portfolio from "./pages/Portfolio";
 import Project from "./components/Project";
 
@@ -23,6 +24,9 @@ const App = () => {
                 </Route>
                 <Route exact path="/contact">
                     <Contact />
+                </Route>
+                <Route exact path="/resume">
+                    <Resume />
                 </Route>
                 <Route exact path="/Project/:index">
                     <Project/>

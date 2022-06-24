@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 const SubCard = (props) => {
     return (
         <>
-            <div className="card shadow col-lg-4 mx-auto py-2" >
+            <div className="card shadow col-lg-4 px-1 mx-auto my-2  py-1" style={{width:"31rem"}} >
                 <div className="card-inner">
                     <img src={props.project.img} className="card-img-top inverted" alt="..." />
                 </div>

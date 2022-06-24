@@ -6,7 +6,7 @@ const Contact = () => {
         <div>
             <div className="container-fluid" style={{height:"89.5vh"}}>
                 <div className="row justify-content-center">
-                    <div className="col-10 mx-auto">
+                    <div className="col-10 mx-auto ">
                         <Mailer/>
                     </div>
                 </div>
