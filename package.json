@@ -4,6 +4,7 @@
   "homepage": "https://kiranbendkoli-portfolio.web.app/",
   "private": true,
   "dependencies": {
+    "@react-pdf-viewer/attachment": "^3.5.0",
     "@react-pdf-viewer/core": "^2.4.1",
     "@react-pdf-viewer/default-layout": "^3.5.0",
     "@react-pdf/renderer": "^2.2.0",
