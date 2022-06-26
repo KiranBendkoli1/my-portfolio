@@ -1,11 +1,11 @@
 import React from "react";
 import { Viewer, Worker } from "@react-pdf-viewer/core";
 import "@react-pdf-viewer/core/lib/styles/index.css";
-import pdf from "../assets/Resume.pdf";
+import pdf from "../assets/Kiran_Bendkoli_.pdf";
 
 function Resume() {
   const url =
-    "https://firebasestorage.googleapis.com/v0/b/kiranbendkoli-portfolio.appspot.com/o/Resume%20(2).pdf?alt=media&token=eb7ef01a-3a75-4157-a2cb-f76dc8c99560";
+    "https://firebasestorage.googleapis.com/v0/b/kiranbendkoli-portfolio.appspot.com/o/Kiran_Bendkoli_.pdf?alt=media&token=8224ddab-ae0d-4fc6-8b38-e0815343ed39";
 
   // pdfjs.GlobalWorkerOptions.workerSrc =
   // `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
