@@ -13,6 +13,10 @@ import lqs2 from "../images//lqs2-min.png";
 import cc0 from "../images//ctt1-min.png";
 import cc1 from "../images//ctt2-min.png";
 import cc2 from "../images//ctt3-min.png";
+import mrs0 from "../images//mrs0-min.png";
+import mrs1 from "../images//mrs1-min.png";
+import mrs2 from "../images//mrs2-min.png";
+
 
 const projects = [
   {
@@ -78,6 +82,19 @@ const projects = [
     link: "http://coderays.me/github-information-finder/",
     desc: "This is web app which helps you to find users information based on their username you can also find their repositorie's brief information , followings and followers information through it",
     source: "https://github.com/KiranBendkoli1/github-information-finder",
+  },
+  {
+    index: 5,
+    title: "Movie Recommendation System",
+    domain: "Machine Learning",
+    img: mrs0,
+    img1: mrs0,
+    img2: mrs1,
+    img3: mrs2,
+    islink: true,
+    link: "https://tmdbmovierecommendationsystem.herokuapp.com/",
+    desc: "Movie recommendation system recommends you movies based on movies you watched you just neet to select movie of your intrest and it will recommends you five different movies based on content similarity. ",
+    source: "https://github.com/KiranBendkoli1/movie-recommendation-system",
   },
 ];
 
