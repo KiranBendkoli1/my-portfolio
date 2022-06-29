@@ -51,7 +51,7 @@ const Project = (props) => {
                             <h2 className="name align-self-center">{projects[index].title}</h2>
                             <p>{projects[index].domain}</p>
                             <p>{projects[index].desc}</p>
-                        <a href={projects[index].source} target="_blank" rel="noopener noreferrer" className="btn btn-outline-info shadow" style={{ border: "2px solid #0cb8ec", borderRadius: "24px",  }}>Soure Code</a>
+                        <a href={projects[index].source} target="_blank" rel="noopener noreferrer" className="btn btn-outline-info shadow" style={{ border: "2px solid #0cb8ec", borderRadius: "24px",  }}>Soure Code</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         {
                             projects[index].islink? <a href={projects[index].link} target="_blank" rel="noopener noreferrer" className="btn btn-outline-info shadow" style={{ border: "2px solid #0cb8ec", borderRadius: "24px",  }}>Live Link</a>: <p></p>
                         }

@@ -145,6 +145,11 @@ background: linear-gradient(135deg, rgba(187,232,232,1) 0%, rgba(235,240,255,1) 
     align-self: center;
     
   }
+
+.name{
+  color: var(--secondary-color);
+  font-size: 2rem;
+}
   
 }
 @media screen and (max-width:350px) {
@@ -162,6 +167,10 @@ background: linear-gradient(135deg, rgba(187,232,232,1) 0%, rgba(235,240,255,1) 
   .myh{
   height: 84.5vh;
 } 
+.name{
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+}
   
 }
 .footer{
