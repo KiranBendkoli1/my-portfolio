@@ -34,7 +34,7 @@ const Mailer = () => {
     }
   };
   return (
-    <div className="container">
+    <div className="container box1 pb-5" >
       <div className="row justify-content-center">
         <div className="col-lg-8">
           <center>

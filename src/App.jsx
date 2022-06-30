@@ -9,7 +9,7 @@ import Project from "./components/Project";
 
 const App = () => {
     return (
-        <>
+        <div >
             <NavBar />
             <Switch>
                 <Route exact path="/">
@@ -29,7 +29,7 @@ const App = () => {
                 </Route>
             </Switch>
             {/* <Footer/> */}
-        </>
+        </div>
     )
 }
 

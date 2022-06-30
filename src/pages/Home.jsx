@@ -1,6 +1,6 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
-
+import bg from "../images/bg.jpg"
 import front from "../images/bitmoji3-min.png";
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
@@ -12,8 +12,8 @@ const Home = () => {
   };
   return (
     <>
-      <div className="container-fluid myh">
-        <div className="row my-5">
+      <div className="container-fluid myh py-5 " style={{backgroundImage: `url("https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80")`,backgroundRepeat:"no-repeat",backgroundSize:"cover" }}>
+        <div className="row pt-5 box1 ">
           <div className="col-10 mx-auto my-auto align-self-center">
             <div className="row">
               <div className="col-lg-6 common order-2 my-5 align-self-center order-lg-1">
@@ -32,7 +32,9 @@ const Home = () => {
                   delaySpeed={1000}
                   
                 /> </span>
-                  
+                  <div className=".blob">
+                    
+ </div>
                 </motion.h1>
                  
                 <motion.p
@@ -61,8 +63,8 @@ const Home = () => {
                   </NavLink>
                 }
               </div>
-              <div className="col-lg-6  order-1 order-lg-2">
-                <div className="inner">
+              <div className="d-flex justify-content-center col-lg-6 order-1 order-lg-2">
+                <div className="inner align-center">
                   <div className="img-fluid">
                     <img
                       src={front}
