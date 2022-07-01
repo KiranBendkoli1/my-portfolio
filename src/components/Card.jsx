@@ -5,7 +5,7 @@ const Card = ({ projects }) => {
     return (
         <>
             <div className="container-fluid">
-                <div className="row col-10 mx-auto" >
+                <div className="row mx-auto" >
                     {
                         projects.map((proj, index) => {
                             return <SubCard project={proj} key={proj.index} />

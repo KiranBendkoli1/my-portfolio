@@ -1,6 +1,5 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
-import bg from "../images/bg.jpg"
 import front from "../images/bitmoji3-min.png";
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
@@ -12,38 +11,44 @@ const Home = () => {
   };
   return (
     <>
-      <div className="container-fluid myh py-5 " style={{backgroundImage: `url("https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80")`,backgroundRepeat:"no-repeat",backgroundSize:"cover" }}>
-        <div className="row pt-5 box1 ">
+      <div className="container myh margintop">
+        <div className="row  box1 ">
           <div className="col-10 mx-auto my-auto align-self-center">
-            <div className="row">
-              <div className="col-lg-6 common order-2 my-5 align-self-center order-lg-1">
+            <div className="row ">
+              <div className="col-lg-6  common order-2 my-5 align-self-center order-lg-1">
                 <motion.h1
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 2 }}
                 >
-                  Hi, I'm a <span className="name"><Typewriter
-                  words={["Computer Engineering Student", "Web Developer", "Coder"]}
-                  loop
-                  cursor
-                  cursorStyle="|"
-                  typeSpeed={70}
-                  deleteSpeed={50}
-                  delaySpeed={1000}
-                  
-                /> </span>
-                  <div className=".blob">
-                    
- </div>
+                  Hi, I'm a{" "}
+                  <span className="name">
+                    <Typewriter
+                      words={[
+                        "Computer Engineering Student",
+                        "Web Developer",
+                        "Coder",
+                      ]}
+                      loop
+                      cursor
+                      cursorStyle="|"
+                      typeSpeed={70}
+                      deleteSpeed={50}
+                      delaySpeed={1000}
+                    />{" "}
+                  </span>
+                  <div className=".blob"></div>
                 </motion.h1>
-                 
+
                 <motion.p
                   className="my-5"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 2.5 }}
                 >
-                  I am a third year Computer Engineering Student at MVPS's KBTCOE Nashik. I love to develop web apps and android apps and I enjoy learning new techonologies.
+                  I am a third year Computer Engineering Student at MVPS's
+                  KBTCOE Nashik. I love to develop web apps and android apps and
+                  I enjoy learning new techonologies.
                 </motion.p>
                 <motion.p
                   initial={{ opacity: 0 }}
@@ -52,16 +57,16 @@ const Home = () => {
                 >
                   you can check out some of my projects down here
                 </motion.p>
-                {
-                  <NavLink
-                    exact
-                    to="/Portfolio"
-                    className="btn btn-outline-info shadow"
-                    style={btnStyle}
-                  >
-                    Portfolio
-                  </NavLink>
-                }
+                
+                <NavLink
+                  exact
+                  to="/Portfolio"
+                  className="btn btn-outline-info shadow"
+                  style={btnStyle}
+                >
+                  Portfolio
+                </NavLink>
+               
               </div>
               <div className="d-flex justify-content-center col-lg-6 order-1 order-lg-2">
                 <div className="inner align-center">

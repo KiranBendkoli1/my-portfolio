@@ -36,9 +36,9 @@ const Mailer = () => {
   return (
     <div className="container box1 pb-5" >
       <div className="row justify-content-center">
-        <div className="col-lg-8">
+        <div className="col-lg-10">
           <center>
-            <h1 className="my-5 name">Contact</h1>{" "}
+            <h1 className="my-5 name">Contact</h1>
           </center>
           <form onSubmit={sendMessage}>
             <div className="mb-3">
@@ -47,7 +47,7 @@ const Mailer = () => {
               </label>
               <input
                 type="text"
-                className="form-control"
+                className="form-control input-glass"
                 onChange={(e) => setName(e.target.value)}
                 value={name}
                 required
@@ -59,7 +59,7 @@ const Mailer = () => {
               </label>
               <input
                 type="email"
-                className="form-control"
+                className="form-control input-glass"
                 onChange={(e) => setEmail(e.target.value)}
                 value={email}
                 required
@@ -71,7 +71,7 @@ const Mailer = () => {
               </label>
               <textarea
                 type="text"
-                className="form-control"
+                className="form-control input-glass"
                 onChange={(e) => setMessage(e.target.value)}
                 value={message}
                 rows="4"

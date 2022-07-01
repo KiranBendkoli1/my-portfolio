@@ -1,45 +1,40 @@
-import React from "react";
-import { Viewer, Worker } from "@react-pdf-viewer/core";
-import "@react-pdf-viewer/core/lib/styles/index.css";
+import React, { useEffect, useState } from "react";
+import { Document, Page, pdfjs } from "react-pdf";
 import pdf from "../assets/Kiran_Bendkoli_.pdf";
+import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function Resume() {
   const url =
     "https://firebasestorage.googleapis.com/v0/b/kiranbendkoli-portfolio.appspot.com/o/Kiran_Bendkoli_.pdf?alt=media&token=8224ddab-ae0d-4fc6-8b38-e0815343ed39";
 
-  // pdfjs.GlobalWorkerOptions.workerSrc =
-  // `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+  const [width, setWidth] = useState(1200);
+  useEffect(() => {
+    setWidth(window.innerWidth);
+  }, []);
 
   return (
-    <div className="d-flex justify-content-center">
-      
-      <div className="container resume-container" >
-        <div className="row d-flex justify-content-center">
-          <h1 className="name d-flex justify-content-center mb-5">Resume</h1>
-          <a href={url} style={{width:"10rem", border: "2px solid #0cb8ec",
-    borderRadius: "2rem",}} className="btn btn-outline-info mb-4">Download Resume</a>
-        </div>
-        <Worker
-          workerUrl="https://unpkg.com/pdfjs-dist@2.6.347/build/pdf.worker.min.js"
-          style={{  
-            margin: "0px",
-            padding: "0px",
-            background: "rgb(187,232,232)",
+    <div className="margintop">
+     
+      <div className="container resume">
+      <div className="row d-flex justify-content-center">
+        <h1 className="name d-flex justify-content-center mb-5">Resume</h1>
+        <a
+          href={url}
+          style={{
+            width: "10rem",
+            border: "2px solid #0cb8ec",
+            borderRadius: "1.5rem",
           }}
+          className="btn btn-outline-info mb-4"
         >
-          <Viewer 
-          className="resume-container"
-            fileUrl={pdf}
-            style={{
-              margin: "0px",
-              padding: "0px",
-              background: "rgb(187,232,232)",
-            }}
-          />
-        </Worker>
+          Download Resume
+        </a>
       </div>
-      {/* <iframe src={url} frameborder="0" style={{width:"80vh",height:"100vh"}}></iframe> */}
-      
+        <Document file={pdf} className="d-flex justify-content-center">
+          <Page pageNumber={1} scale={width > 786 ? 1.6 : 0.6} />
+        </Document>
+      </div>
     </div>
   );
 }

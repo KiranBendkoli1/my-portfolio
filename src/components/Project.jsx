@@ -6,9 +6,9 @@ const Project = (props) => {
     const {index} = useParams();
     console.log(index);
     return (
-        <div className="container-fluid">
-            <div className="row mb-5 ">
-                <div className="col-10  mx-auto my-auto align-self-center">
+        <div className="container  margintop" >
+            <div className="row mb-5 box1">
+                <div className="mx-auto my-auto align-self-center">
                     <div className="row">
                         <div className="col-lg-8 common my-5 align-self-center ">
                             <div id="carouselExampleDark" className="carousel carousel-dark slide" data-interval="2000" data-bs-ride="carousel">
@@ -17,7 +17,7 @@ const Project = (props) => {
                                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
                                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
                                 </div>
-                                <div className="carousel-inner">
+                                <div className="carousel-inner " style={{borderRadius:"0.6rem"}}>
                                     <div className="carousel-item active" data-bs-interval="3000">
                                         <img src={projects[index].img1} className="inverted d-block w-100" alt="..." />
                                         <div className="carousel-caption d-none d-md-block">
