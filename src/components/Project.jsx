@@ -21,7 +21,7 @@ const Project = (props) => {
                                     <div className="carousel-item active" data-bs-interval="3000">
                                         <img src={projects[index].img1} className="inverted d-block w-100" alt="..." />
                                         <div className="carousel-caption d-none d-md-block">
-                                            
+                        
                                         </div>
                                     </div>
                                     <div className="carousel-item" data-bs-interval="3500">
@@ -51,9 +51,9 @@ const Project = (props) => {
                             <h2 className="name align-self-center">{projects[index].title}</h2>
                             <p>{projects[index].domain}</p>
                             <p>{projects[index].desc}</p>
-                        <a href={projects[index].source} target="_blank" rel="noopener noreferrer" className="btn btn-outline-info shadow" style={{ border: "2px solid #0cb8ec", borderRadius: "24px",  }}>Soure Code</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href={projects[index].source} target="_blank" rel="noopener noreferrer" className="button" >Soure Code</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         {
-                            projects[index].islink? <a href={projects[index].link} target="_blank" rel="noopener noreferrer" className="btn btn-outline-info shadow" style={{ border: "2px solid #0cb8ec", borderRadius: "24px",  }}>Live Link</a>: <p></p>
+                            projects[index].islink? <a href={projects[index].link} target="_blank" rel="noopener noreferrer" className="button" >Link</a>: <p></p>
                         }
                         </div>
                     </div>

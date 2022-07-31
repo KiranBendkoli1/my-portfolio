@@ -1,14 +1,14 @@
 import bb0 from "../images//bb1-min.png";
 import bb1 from "../images//bb2-min.png";
 import bb2 from "../images//bb3-min.png";
-import em0 from "../images//em1-min.jpg";
-import em1 from "../images//em2-min.jpg";
-import em2 from "../images//em3-min.jpg";
-import gf0 from "../images//gf1-min.png";
-import gf1 from "../images//gf2-min.png";
-import gf2 from "../images//gf3-min.png";
-import lqs0 from "../images//lqs0-min.png";
-import lqs1 from "../images//lqs1-min.png";
+import em0 from "../images//em1.jpg";
+import em1 from "../images//em2.jpg";
+import em2 from "../images//em3.jpg";
+import gf0 from "../images//gg1.png";
+import gf1 from "../images//gg2.png";
+import gf2 from "../images//gg.png";
+import lqs0 from "../images//lqs1.jpg";
+import lqs1 from "../images//lqs2.jpg";
 import lqs2 from "../images//lqs2-min.png";
 import cc0 from "../images//ctt1-min.png";
 import cc1 from "../images//ctt2-min.png";
@@ -36,13 +36,13 @@ const projects = [
     index: 1,
     title: "Lets Quick Share",
     domain: "Cross Platform",
-    img: lqs1,
-    img1: lqs1,
-    img2: lqs0,
+    img: lqs0,
+    img1: lqs0,
+    img2: lqs1,
     img3: lqs2,
     islink: true,
     link: "https://lets-quick-share.web.app/#/",
-    desc: "This app helps users to share important texts and links between devices",
+    desc: "This app helps users to share important texts and links between devices. You can download android app from github release and you can use live link to visit web app",
     source: "https://github.com/KiranBendkoli1/lets-quick-share",
   },
   {
@@ -66,9 +66,10 @@ const projects = [
     img1: em0,
     img2: em1,
     img3: em2,
-    islink: false,
+    islink: true,
     desc: "This is an android app which can track your daily expenses with the help of this app you can control your expenses",
     source: "https://github.com/KiranBendkoli1/Expense-Manager",
+    link: "https://github.com/KiranBendkoli1/Expense-Manager/releases/download/v2.0.0/ExpenseManagerV2.0.0.apk"
   },
   {
     index: 4,

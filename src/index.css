@@ -13,22 +13,20 @@ body {
 }
 
 body {
-  background-image: linear-gradient(
-    to left,
-    #ec39a6,
-    #c176eb,
-    #76a2ff,
-    #00c2ff,
-    #00daff,
-    #00dfe5,
-    #00e0be,
-    #5dde8f,
-    #7ad16c,
-    #91c24b,
-    #a5b22d
-  );
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: #feac5e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4bc0c8,
+    #c779d0,
+    #feac5e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4bc0c8,
+    #c779d0,
+    #feac5e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* background-size: cover; */
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   height: auto;
@@ -59,10 +57,10 @@ code {
   top: 0;
   z-index: 1;
 }
-.margintop{
+.margintop {
   margin-top: 11rem;
 }
-.scrolled{
+.scrolled {
   position: fixed;
   top: 0;
   left: 0;
@@ -94,6 +92,15 @@ code {
   width: 50%;
 }
 
+.btn {
+  background-image: radial-gradient(
+    circle farthest-corner at 0.8% 3.1%,
+    rgba(255, 188, 224, 1) 0%,
+    rgba(170, 165, 255, 1) 46%,
+    rgba(165, 255, 205, 1) 100.2%
+  );
+  color: var(--secondary-color);
+}
 
 .btn:hover {
   color: var(--secondary-color);
@@ -212,8 +219,6 @@ code {
   backdrop-filter: blur(2px);
 }
 
-
-
 .box1 {
   margin: 0 auto;
   width: auto;
@@ -222,6 +227,8 @@ code {
   border: 1px solid rgba(255, 255, 255, 0);
   border-radius: 10px;
   backdrop-filter: blur(2px);
+  /* box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  /* text-align: center; */
 }
 
 .box2 {
@@ -234,6 +241,110 @@ code {
   backdrop-filter: blur(2px);
 }
 
+/* Circles */
+.circle1,
+.circle2,
+.circle3,
+.circle4 {
+  position: absolute;
+  backdrop-filter: blur(2px);
+  border-radius: 50%;
+  
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.5)
+  );
+}
+.circle1 {
+  top: 14%;
+  position: fixed;
+  right: 12%;
+  height: 10rem;
+  width: 10rem;
+}
+.circle2 {
+  position: fixed;
+  /* Bottom */
+  bottom: 15%;
+  left: 11%;
+  z-index: 2;
+  height: 9rem;
+  width: 9rem;
+}
+.circle3 {
+  position: fixed;
+  /* left most  */
+  top: 15%;
+  left: 10%;
+  height: 15rem;
+  width: 15rem;
+  
+  
+}
+.circle4 {
+  /* bottom right  */
+  position: fixed;
+  z-index: 2;
+  bottom: 10%;
+  right:  20%;
+  height: 13rem;
+  width: 13rem;
+}
+
+
+.button{
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-size: 1.4rem;
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0); 
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  
+  text-align: center;
+}
+.button:hover{
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0); 
+  text-decoration: none;
+  color: var(--secondary-color);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.09);
+  font-size: 1.5rem;
+  /* background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.1)
+  ); */
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+}         
+
+
+/* Squares  */
+
+.square {
+  position: absolute;
+  margin: auto;
+  width: 6rem;
+  
+  inset: 0;
+  height: 6rem;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-radius: 10px;
+  backdrop-filter: blur(2px);
+}
+#sq1 {
+  margin-left: 15rem;
+}
+#sq2 {
+  z-index: 0;
+  margin-left: auto;
+  margin-top: auto;
+}
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -246,9 +357,17 @@ code {
   }
 }
 
-@media screen and (max-width:990px) {
-  .margintop{
-    margin-top:11rem;
+@media screen and (max-width: 990px) {
+  .margintop {
+    margin-top: 11rem;
+  }
+  .circle1,
+  .circle2,
+  .circle3,
+  .circle4 {
+    height: 6rem;
+    width: 6rem;
+    z-index: 0;
   }
 }
 
@@ -271,13 +390,26 @@ code {
     align-self: center;
   }
 
-  .margintop{
-    margin-top:6rem;
+  .margintop {
+    margin-top: 6rem;
   }
-  
+
   .name {
     color: var(--secondary-color);
     font-size: 2rem;
+  }
+  #sq1 {
+    display: none;
+  }
+  #sq2 {
+    display: none;
+  }
+  .circle1,
+  .circle2,
+  .circle3,
+  .circle4 {
+    height: 5rem;
+    width: 5rem;
   }
 }
 @media screen and (max-width: 350px) {
@@ -298,6 +430,12 @@ code {
   .name {
     color: var(--secondary-color);
     font-size: 1.5rem;
+  }
+  #sq1 {
+    display: none;
+  }
+  #sq2 {
+    display: none;
   }
 }
 .footer {

@@ -1,16 +1,12 @@
 import React, { useState } from "react";
 import { db } from "../firebase";
 import { collection, addDoc } from "firebase/firestore";
-// import { async } from "@firebase/util";
 
 const Mailer = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  let btnStyle = {
-    border: "2px solid #0cb8ec",
-    borderRadius: "24px",
-  };
+ 
   const sendMessage = async (e) => {
     e.preventDefault();
     try {
@@ -22,13 +18,8 @@ const Mailer = () => {
         date: dt,
         message: message,
       });
-      alert("Your Message is sent Successfully")
-    //   .onSubmit(()=>{
-    //     setName("");
-    //     setEmail("")
-    //     setMessage("")
-    //   })
-    //   return
+      alert("Your Message is sent Successfully");
+   
     } catch (error) {
       alert("Oops! please try again later"); 
     }
@@ -81,11 +72,10 @@ const Mailer = () => {
             </div>
             <input
               type="submit"
-              className="my-3 btn btn-outline-info shadow "
-              style={btnStyle}
+              className="button"
+              
               value="Submit"
             />
-        
           </form>
         </div>
       </div>

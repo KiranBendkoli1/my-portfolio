@@ -36,7 +36,7 @@ const NavBar = () => {
                       <img src={icon} className="inverted" alt="" />
                     </NavLink>
                   </div>
-                  <div className="pt-2">
+                  <div >
                     <button
                       className="navbar-toggler"
                       type="button"
@@ -54,7 +54,7 @@ const NavBar = () => {
                   className="collapse navbar-collapse"
                   id="navbarSupportedContent"
                 >
-                  <ul className="navbar-nav  m-auto mr-2 mb-lg-0"></ul>
+                  <ul className="navbar-nav  m-auto  mb-lg-0"></ul>
                   <ul className="d-flex navbar-nav">
                     <li className="nav-item">
                       <NavLink
@@ -67,7 +67,7 @@ const NavBar = () => {
                         Home
                       </NavLink>
                     </li>
-                    <li className="nav-item mr-2">
+                    <li className="nav-item ">
                       <NavLink
                         activeClassName="menu_active"
                         exact
@@ -77,7 +77,7 @@ const NavBar = () => {
                         Portfolio
                       </NavLink>
                     </li>
-                    <li className="nav-item mr-2">
+                    <li className="nav-item ">
                       <NavLink
                         activeClassName="menu_active"
                         exact

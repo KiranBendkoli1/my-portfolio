@@ -5,12 +5,13 @@ import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 const Home = () => {
-  let btnStyle = {
-    border: "2px solid #0cb8ec",
-    borderRadius: "24px",
-  };
+  
   return (
     <>
+      <div className="circle1"></div>
+      <div className="circle2"></div>
+      <div className="circle3"></div>
+      <div className="circle4"></div>
       <div className="container myh margintop">
         <div className="row  box1 ">
           <div className="col-10 mx-auto my-auto align-self-center">
@@ -57,16 +58,16 @@ const Home = () => {
                 >
                   you can check out some of my projects down here
                 </motion.p>
-                
+
                 <NavLink
                   exact
                   to="/Portfolio"
-                  className="btn btn-outline-info shadow"
-                  style={btnStyle}
+                  // className="btn btn-outline-info shadow"
+                  // style={btnStyle}
+                  className="button"
                 >
                   Portfolio
                 </NavLink>
-               
               </div>
               <div className="d-flex justify-content-center col-lg-6 order-1 order-lg-2">
                 <div className="inner align-center">
@@ -85,40 +86,25 @@ const Home = () => {
 
             <div className="row">
               <div className="s-icons row mb-5">
-                <div className="minline">
-                  <div
-                    className="card shadow"
-                    style={{
-                      width: "2.8",
-                      height: "2.8rem",
-                      borderRadius: "2rem",
-                    }}
-                  >
+                <div className="">
+                 
                     <a
-                      className="hv btn btn-outline-info my-auto "
-                      style={{ borderRadius: "2rem", height: "2.8rem" }}
+                      className="button"
+                      style={{  height: "2.8rem",marginRight: "1rem",marginTop:"0px" }}
                       href="https://github.com/KiranBendkoli1"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <FaGithub
                         size="1.5rem"
-                        border="2px solid #0cb8ec"
+                        marginTop="0"
                         color="#000"
                       />
                     </a>
-                  </div>
-                  <div
-                    className="card shadow"
-                    style={{
-                      width: "2.8",
-                      height: "2.8rem",
-                      borderRadius: "2rem",
-                    }}
-                  >
+            
                     <a
-                      className="hv btn btn-outline-info my-auto "
-                      style={{ borderRadius: "2rem", height: "2.8rem" }}
+                      className="button "
+                      style={{  height: "2.8rem",marginRight: "1rem",marginTop:"0px" }}
                       href="https://www.linkedin.com/in/kiran-bendkoli-2a2b741b9/"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -129,18 +115,10 @@ const Home = () => {
                         color="#1168cc"
                       />
                     </a>
-                  </div>
-                  <div
-                    className="card shadow"
-                    style={{
-                      width: "2.8",
-                      height: "2.8rem",
-                      borderRadius: "2rem",
-                    }}
-                  >
+                  
                     <a
-                      className="hv btn btn-outline-info my-auto "
-                      style={{ borderRadius: "2rem", height: "2.8rem" }}
+                      className="button "
+                      style={{  height: "2.8rem", marginTop:"0px" }}
                       href="https://www.instagram.com/kiran_bendkoli_/"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -151,7 +129,7 @@ const Home = () => {
                         color="#af0298"
                       />
                     </a>
-                  </div>
+                  
                 </div>
               </div>
             </div>
