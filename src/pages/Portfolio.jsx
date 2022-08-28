@@ -1,9 +1,15 @@
 import React from "react";
 import Card from "../components/Card";
 import projects from "../components/ProjectList";
+
+import { motion } from "framer-motion";
 const Portfolio = () => {
   return (
-    <div>
+    <motion.div
+      initial={{width:0, opacity:0}}
+      animate={{width:"100%",opacity:1, transition:{duration: 1}}}
+      exit={{x:window.innerWidth}}
+      >
       <div className="circle1"></div>
       <div className="circle2"></div>
       <div className="circle3"></div>
@@ -14,7 +20,7 @@ const Portfolio = () => {
         </center>
         <Card projects={projects} />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

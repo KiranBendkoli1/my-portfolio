@@ -7,7 +7,11 @@ import { motion } from "framer-motion";
 const Home = () => {
   
   return (
-    <>
+    <motion.div
+      initial={{width:0,opacity:0}}
+      animate={{width:"100%",opacity:1, transition:{duration: 1}}}
+      exit={{x:window.innerWidth}}
+      >
       <div className="circle1"></div>
       <div className="circle2"></div>
       <div className="circle3"></div>
@@ -47,7 +51,7 @@ const Home = () => {
                   animate={{ opacity: 1 }}
                   transition={{ duration: 2.5 }}
                 >
-                  I am a third year Computer Engineering Student at MVPS's
+                  I am a final year Computer Engineering Student at MVPS's
                   KBTCOE Nashik. I love to develop web apps and android apps and
                   I enjoy learning new techonologies.
                 </motion.p>
@@ -136,7 +140,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </>
+    </motion.div>
   );
 };
 

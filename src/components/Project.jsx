@@ -1,17 +1,26 @@
 import React from 'react'
 import { useParams } from 'react-router'
 import projects from './ProjectList';
-
+import { motion } from "framer-motion";
 const Project = (props) => {
     const {index} = useParams();
     console.log(index);
     return (
+        <motion.div
+        initial={{width:0, opacity:0}}
+        animate={{width:"100%",opacity:1, transition:{duration: 1}}}
+        exit={{y:window.innerWidth}}
+        >
         <div className="container  margintop" >
             <div className="row mb-5 box1">
                 <div className="mx-auto my-auto align-self-center">
                     <div className="row">
                         <div className="col-lg-8 common my-5 align-self-center ">
-                            <div id="carouselExampleDark" className="carousel carousel-dark slide" data-interval="2000" data-bs-ride="carousel">
+                            <motion.div 
+                             initial={{ opacity:0}}
+                             animate={{opacity:0.9, transition:{duration: 1}}}
+                             exit={{opacity:0}}
+                            id="carouselExampleDark" className="carousel carousel-dark slide" data-interval="2000" data-bs-ride="carousel">
                                 <div className="carousel-indicators">
                                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -45,7 +54,7 @@ const Project = (props) => {
                                     <span className="carousel-control-next-icon" aria-hidden="true"></span>
                                     <span className="visually-hidden">Next</span>
                                 </button>
-                            </div>
+                            </motion.div>
                         </div>
                         <div className="col-lg-4 common order-2 my-5 align-self-center order-lg-1">
                             <h2 className="name align-self-center">{projects[index].title}</h2>
@@ -61,6 +70,7 @@ const Project = (props) => {
 
             </div>
         </div>
+        </motion.div>
     )
 
 }

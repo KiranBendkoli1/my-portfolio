@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
-import pdf from "../assets/Kiran_Resume.pdf";
+import pdf from "../assets/KiranBendkoli.pdf";
+import { motion } from "framer-motion";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function Resume() {
   const url =
-    "https://firebasestorage.googleapis.com/v0/b/kiranbendkoli-portfolio.appspot.com/o/Kiran_Resume.pdf?alt=media&token=e432dde4-0936-4cad-bff1-1629f2a0685b";
+    "https://firebasestorage.googleapis.com/v0/b/kiranbendkoli-portfolio.appspot.com/o/KiranBendkoli.pdf?alt=media&token=d69f31c4-2056-49e8-9f04-963125ea91ab";
 
   const [width, setWidth] = useState(1200);
   useEffect(() => {
@@ -14,6 +15,11 @@ function Resume() {
   }, []);
 
   return (
+    <motion.div
+      initial={{width:0, opacity:0}}
+      animate={{width:"100%", opacity:1, transition:{duration: 1}}}
+      exit={{x:window.innerWidth}}
+      >
     <div className="margintop">
      <div className="circle1"></div>
       <div className="circle2"></div>
@@ -45,6 +51,7 @@ function Resume() {
         </a>
      </div>
     </div>
+    </motion.div>
   );
 }
 export default Resume;
