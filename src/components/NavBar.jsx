@@ -82,6 +82,16 @@ const NavBar = () => {
                         activeClassName="menu_active"
                         exact
                         className="nav-link"
+                        to="/Experience"
+                      >
+                        Experience
+                      </NavLink>
+                    </li>
+                    <li className="nav-item ">
+                      <NavLink
+                        activeClassName="menu_active"
+                        exact
+                        className="nav-link"
                         to="/Resume"
                       >
                         Resume

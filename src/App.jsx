@@ -6,6 +6,7 @@ import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
 import Portfolio from "./pages/Portfolio";
 import Project from "./components/Project";
+import Experience from "./pages/Experience";
 
 const App = () => {
     const location = useLocation();
@@ -18,6 +19,9 @@ const App = () => {
                 </Route>
                 <Route exact path="/portfolio">
                     <Portfolio />
+                </Route>
+                <Route exact path="/experience">
+                    <Experience />
                 </Route>
                 <Route exact path="/contact">
                     <Contact />
